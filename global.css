@@ -1,12 +1,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
 
-#body { font-family: Rowdies; }
+{/* CSS HEX */
+<--key-lime: #e2eb98ff>;
+--morning-blue: #93a392ff;
+--laurel-green: #adbf97ff;
+--celadon: #bad9a2ff;
+--cambridge-blue: #9dc4b5ff;
+}
+
+
+
+
+
+
+
+body {
+    background-color: var(--celadon);
+    font-family: "Rowdies";}
+
 
 #img {
     width:  100vw;
 }
 
 #info {
-    color: red 
+    color: var(ambridge-blue)
 }
