@@ -1,29 +1,81 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
 
-{/* CSS HEX */
-<--key-lime: #e2eb98ff>;
+*{/* CSS HEX */
+--key-lime: #e2eb98ff>;
 --morning-blue: #93a392ff;
 --laurel-green: #adbf97ff;
 --celadon: #bad9a2ff;
---cambridge-blue: #9dc4b5ff;
+--cambridge-blue: #9dc4b5ff;}
+
+
+
+
+
+
+
+
+#body {
+font-family: Rowdies;}
+
+
+.img {
+    width:  50vw;
 }
 
-
-
-
-
-
-
-body {
-    background-color: var(--celadon);
-    font-family: "Rowdies";}
-
-
-#img {
-    width:  100vw;
-}
-
-#info {
+.info {
     color: var(ambridge-blue)
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: solid 1px black;
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+
+}
+
+
+.blue {
+    background-color: steelblue;
+}
+
+ 
+ 
+  .right-box {
+    display: grid;
+    grid-template-rows: 50% 50%;
+  } 
+  
+ 
+  .hide {
+    display: none;
+  
+
+}
+@media (min-width: 700px) {
+body {
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "col1 col2";
+}
+
+img { 
+    grid-area: col2;
+}
+
+.info {
+
+    grid-area: col1;
+}
+}
+
+@media (max-width: 400px) {
+    
 }
